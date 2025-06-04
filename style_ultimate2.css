@@ -1,0 +1,15 @@
+
+/* Arrange images side by side */
+.imagealign, .image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.imagealign img, .image-grid img {
+  max-width: 100%;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}

@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaitanya Thadiboina | Software Engineer</title>
+  <link rel="stylesheet" href="style_ultimate.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+  <!-- Dark Mode Toggle -->
+  <button id="darkToggle" class="dark-mode-toggle">🌓</button>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="modern-navbar">
+      <div class="nav-brand">
+        <a href="#" class="brand-logo">Chaitanya<span></span></a>
+      </div>
+      <div class="nav-toggle" id="navToggle">☰</div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <br>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1><span id="typed-name"></span></h1>
+    <p class="cool-text">I’m open to exciting projects, collaborations, or full-time opportunities.</p>
+    <div class="button-group">
+      <a href="mailto:tlvdchaitanya@gmail.com" class="hero-btn">🚀 hire me</a>
+      <a href="resume.pdf" class="hero-btn" download>📄 Resume</a>
+      <a href="#contact" class="hero-btn">📬 Contact</a>
+    </div>
+  </section>
+  <br>
+  <section>
+  <!-- Mobile Toggle -->
+<div class="sidebar-toggle" onclick="toggleSidebar()">☰</div>
+
+<!-- Sleek Sidebar -->
+<div class="dark-sidebar" id="darkSidebar">
+  <a href="https://www.linkedin.com/feed/" target="_blank" class="icon-link" title="LinkedIn">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+  </a>
+  <a href="https://github.com/tlvdchaitanya" target="_blank" class="icon-link" title="GitHub">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+  </a>
+  <a href="mailto:tlvdchaitanya@gmail.com" class="icon-link" title="Mail">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Mail">
+  </a>
+  <a href="resume.pdf" target="_blank" class="icon-link" title="Resume">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/resume.png" alt="Resume">
+  </a>
+</div>
+</section>
+
+  <!-- Floating Contact Button -->
+  <button class="floating-contact" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">📨 Contact Me</button>
+
+  <!-- Project Popup -->
+  <div id="project-popup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <img id="popup-image" src="" alt="Project Preview">
+      <h2 id="popup-title"></h2>
+      <p id="popup-desc"></p>
+      <div class="popup-actions">
+        <a id="popup-code-link" href="#" target="_blank" class="popup-button">View Code</a>
+        <button onclick="closePopup()" class="popup-button">Close</button>
+      </div>
+    </div>
+  </div>  
+  <br>
+  <div>
+    <p id="About" class="container">   
+     <h2 style="text-align:center; font-size: 2rem; margin: 2rem 0;" >About</h2>
+        I’m a passionate Software Engineer with expertise in Java, C, and Web Development, dedicated to building high-performance, efficient, and scalable software solutions. As a Software Engineer Intern at SiliconAcademyPvtLtd, I developed and optimized software, managed large datasets, and collaborated with teams to solve complex challenges.  
+        
+        Currently, I pursued my Bachelor’s in Computer Science at Indiana State University, mastering software development and data analysis. I also hold certifications, including:  
+        ✅ HTML, CSS, and JavaScript for Web Developers – Johns Hopkins University  
+        ✅ Microsoft Certified: Azure Administrator Associate (AZ-104) – Microsoft  
+        
+        My web development skills include HTML, CSS, JavaScript, React, and Node.js, enabling me to build dynamic, responsive, and user-friendly web applications.  
+        
+        I am actively seeking a challenging internship or full-time opportunity where I can apply my skills, grow as a developer, and contribute to impactful projects. If you’re looking for a dedicated, innovative, and results-driven engineer, let’s connect! 🚀 </p>
+    </main>
+    <article>
+        <!-- <div id="education" class="container">
+            <h2>Education</h2>
+        <div class="imagealign">
+            <img src="isu.png" alt="Error">
+            <br>
+            <img src="isu1.png" alt="Error">
+        </div>
+        <div>
+            <dt>
+                <dl> <b>Indiana State University</b>(2021-Present) - Bachelor of Science in Computer Science - Minor in Data Science - Expected Graduation May 2025  </dl>
+            </dt>
+        </div>
+        <div class="imagealign">
+            <img src="cu.png" alt="Error">
+            <br>
+            <img src="cu1.png" alt="Error">
+        </div>
+        <div>
+            <dt>
+                <dl> <b>Chandigarh University</b>(2021-2023) - Bachelor of Science in Computer Science - Artificial Intelligence  </dl>
+            </dt>
+        </div>
+    </div> -->
+    <br>
+    <section id="education" class="education-section">
+      <h2>Education</h2>
+      <div class="education-grid">
+    
+        <!-- Indiana State University -->
+        <div class="education-card">
+          <div class="education-image">
+            <img src="isu.png" alt="Indiana State University" />
+          </div>
+          <div class="education-info">
+            <h3>Indiana State University</h3>
+            <p><strong>Bachelor of Science in Computer Science</strong></p>
+            <p>Graduated: May 2025 | CGPA: 3.61 / 4</p>
+            <h4>Coursework</h4>
+            <ul class="coursework-list">
+              <li>Data Structures & Algorithms</li>
+              <li>Machine Learning</li>
+              <li>Operating Systems</li>
+              <li>Artificial Intelligence</li>
+              <li>Design Analysis of Algorithms</li>
+              <li>Database Systems</li>
+              <li>Programming for Data Science</li>
+              <li>Computer Organization</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Chandigarh University -->
+        <div class="education-card">
+          <div class="education-image">
+            <img src="cu.png" alt="Chandigarh University" />
+          </div>
+          <div class="education-info">
+            <h3>Chandigarh University</h3>
+            <p><strong>Computer Science (Transfer Program)</strong></p>
+            <p>Completed: 2023 | CGPA: 8.4 / 10</p>
+            <h4>Coursework</h4>
+            <ul class="coursework-list">
+              <li>Programming Structures</li>
+              <li>Discrete Structures</li>
+              <li>Graphical User Interfaces</li>
+              <li>Web Technologies</li>
+              <li>Software Engineering</li>
+              <li>Compiler Design</li>
+              <li>Internet Programming</li>
+              <li>Data Communication & Networks</li>
+            </ul>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    <br>
+    <div id="experience">
+        <h2 style="text-align:center; font-size: 2rem; margin: 2rem 0;" >Experience</h2>
+        <br>
+        <!-- <p><b>Software development Engineer intern</b></p>
+        <p><i>IB systems Inc</i></p>
+        <p>
+            <ul>
+                <li>Contributed as a Java and web developer, building scalable applications and enhancing systems.
+                </li>
+                <li>Integrated AI-driven features using large language models (LLMs) to improve user experience and system intelligence.
+                </li>
+                <li>Gained hands-on experience with agile workflows, RESTful APIs, and modern development tools.
+                </li>
+                <li>Designed and built RESTful APIs for internal service integration, improving response times and data handling efficiency by 15%.
+                </li>
+                <li>
+                    Partnered with cross-functional teams to successfully integrate the Message Level Simulator into existing systems, resulting in a 50% boost in data accuracy and a 20% enhancement in overall system performance.
+                </li>
+            </ul>
+        </p> -->
+        <br>
+        <p><b>Software Engineer Intern</b></p>
+        <p><i>SiliconAcademyPvtLtd 
+        </i></p>
+        <p>
+            <ul>
+                <li>Developed and optimized efficient, scalable code in C and Java, enhancing software performance and maintainability.
+                </li>
+                <li>Gained hands-on experience in data management and processing, improving system functionality and efficiency.
+                </li>
+                <li>Worked on challenging projects that strengthened problem-solving skills and deepened software development expertise.
+                </li>
+                <li>Optimized performance by handling intricate datasets and implementing effective data processing solutions.
+                </li>
+                <li>Contributed to software solutions that enhanced overall functionality and efficiency.
+                </li>
+            </ul>
+        </p>
+    </div>
+    <div>
+        <!-- <h2>Projects</h2>
+           <div class="portfolio-container">
+            <div class="portfolio-card">
+              <img src="emp1.png" alt="Project 1" class="portfolio-image">
+              <div class="portfolio-info">
+                <h2>Employee Reward System</h2>
+                <p>Java, Spring Boot, React, MySQL</p>
+              </div>
+            </div>
+          
+            <div class="portfolio-card">
+              <img src="morris.png" alt="Project 2" class="portfolio-image">
+              <div class="portfolio-info">
+                <h2>Nine Men’s Morris Game, AI</h2>
+                <p>Java (Object-Oriented Programming)</p>
+              </div>
+            </div>
+          
+            <div class="portfolio-card">
+              <img src="escape.jpg" alt="Project 3" class="portfolio-image">
+              <div class="portfolio-info">
+                <h2>Escape Room</h2>
+                <p>Virtual Reality Project</p>
+              </div>
+            </div>
+          
+            <div class="portfolio-card">
+              <img src="project4.webp" alt="Project 4" class="portfolio-image">
+              <div class="portfolio-info">
+                <h2>Project Four</h2>
+                <p>Short description of project four.</p>
+              </div>
+            </div>
+          
+            <div class="portfolio-card">
+              <img src="smart.png" alt="Project 5" class="portfolio-image">
+              <div class="portfolio-info">
+                <h2>Smart Agriculture Using IoT</h2>
+                <p>Research Paper | IEEE (Team lead) </p>
+              </div>
+            </div>
+          
+            <div class="portfolio-card">
+              <img src="project6.webp" alt="Project 6" class="portfolio-image">
+              <div class="portfolio-info">
+                <h2>Project Six</h2>
+                <p>Short description of project six.</p>
+              </div>
+            </div>
+          </div>
+           -->
+<!-- Repeat for other projects -->
+ <br>
+<div>
+  <h2 id="projects" style="text-align:center; font-size: 2rem; margin: 2rem 0;">Projects</h2>
+  <div class="portfolio-container">
+    <!-- Repeat for each project -->
+    <div class="portfolio-card" onclick="openPopup('pop1.jpg', 'Employee Reward System', 'Java, Spring Boot, React, MySQL', 'https://github.com/your-repo1')">
+      <img src="employeereward.png" alt="Project 1" class="portfolio-image">
+      <div class="portfolio-info">
+        <h2>Employee Reward System</h2>
+        <p>Java, Spring Boot, React, MySQL</p>
+        <button class="view-more">View More</button>
+      </div>
+    </div>
+
+    <div class="portfolio-card" onclick="openPopup('morris.png', 'Nine Mens Morris Game, AI', 'Java (OOP)', 'https://github.com/your-repo2')">
+      <img src="portfolio.png" alt="Project 2" class="portfolio-image">
+      <div class="portfolio-info">
+        <h2>Personal Portfolio</h2>
+        <p>HTML, CSS, JavaScript, React</p>
+        <button class="view-more">View More</button>
+      </div>
+    </div>
+    <div class="portfolio-card" onclick="openPopup('morris.png', 'Nine Men\u2019s Morris Game, AI', 'Java (OOP)', 'https://github.com/your-repo2')">
+      <img src="escaperoom.png" alt="Project 2" class="portfolio-image">
+      <div class="portfolio-info">
+        <h2>Escape Room</h2>
+        <p>Virtual Reality Project</p>
+        <button class="view-more">View More</button>
+      </div>
+    </div>
+    <div class="portfolio-card" onclick="openPopup('morris.png', 'Nine Men\u2019s Morris Game, AI', 'Java (OOP)', 'https://github.com/your-repo2')">
+      <img src="Gym.png" alt="Project 2" class="portfolio-image">
+      <div class="portfolio-info">
+        <h2>Gym Management Website</h2>
+        <p> WEB Programming Languages(HTML, CSS, JavaScript, React, Node.js)</p>
+        <button class="view-more">View More</button>
+      </div>
+    </div>
+    <div class="portfolio-card" onclick="openPopup('morris.png', 'Nine Men\u2019s Morris Game, AI', 'Java (OOP)', 'https://github.com/your-repo2')">
+      <img src="smart.png" alt="Project 2" class="portfolio-image">
+      <div class="portfolio-info">
+        <h2>Smart Agriculture Using IoT</h2>
+        <p>Research Paper | IEEE (Team lead)</p>
+        <button class="view-more">View More</button>
+      </div>
+    </div>
+    <div class="portfolio-card" onclick="openPopup('morris.png', 'Nine Men\u2019s Morris Game, AI', 'Java (OOP)', 'https://github.com/your-repo2')">
+      <img src="morris.png" alt="Project 2" class="portfolio-image">
+      <div class="portfolio-info">
+        <h2> Nine Mens Morris Game, AI </h2>
+        <p>HTML, CSS, JavaScript, React, Express.js</p>
+        <button class="view-more">View More</button>
+      </div>
+    </div>
+
+    <!-- Add the rest similarly... -->
+  </div>
+</div>
+<br>
+<!-- popup model -->
+<div id="project-popup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <img id="popup-image" src="" alt="Project Preview">
+    <h2 id="popup-title"></h2>
+    <p id="popup-desc"></p>
+    <div class="popup-actions">
+      <a id="popup-code-link" href="#" target="_blank" class="popup-button">View Code</a>
+      <button onclick="closePopup()" class="popup-button">Close</button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+    </div>
+        <!-- <div id="skills" class="skills-section">
+            <h2> Skills</h2>
+            <div class="skills-grid">
+                <img src="html.png" alt="Image 1">
+                <img src="css.png" alt="Image 2">
+                <img src="js.png" alt="Image 3">
+                <img src="reactjs.png" alt="Image 4">
+                <img src="nodejs.png" alt="Image 5">
+                <img src="java.png" alt="Image 6">
+                <img src="c++.png" alt="Image 7">
+                <img src="c.png" alt="Image 8">
+                <img src="python.png" alt="Image 9">
+                <img src="mysql.png" alt="Image 10">
+                <img src="github.png" alt="Image 11">
+                <img src="springboot.png" alt="Image 12">
+              </div> -->
+              <br>
+              <div id="skills" class="skills-section">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                  <div class="skill-card"><img src="html.png" alt="HTML" /><p>HTML5</p></div>
+                  <div class="skill-card"><img src="css.png" alt="CSS" /><p>CSS3</p></div>
+                  <div class="skill-card"><img src="js.png" alt="JavaScript" /><p>JavaScript</p></div>
+                  <div class="skill-card"><img src="reactjs.png" alt="React" /><p>React</p></div>
+                  <div class="skill-card"><img src="python.png" alt="Python" /><p>python</p></div>
+                  <div class="skill-card"><img src="java.png" alt="Java" /><p>Java</p></div>
+                  <div class="skill-card"><img src="c++.png" alt="C++" /><p>C++</p></div>
+                  <div class="skill-card"><img src="mysql.png" alt="MySQL" /><p>MySQL</p></div>
+                  <div class="skill-card"><img src="github.png" alt="GitHub" /><p>GitHub</p></div>
+                  <div class="skill-card"><img src="springboot.png" alt="springboot" /><p>springboot</p></div>
+                </div>
+              </div>
+              
+        </div>
+        <br>
+        <div id="contact" class="container">
+            <!-- <h2> Contact Information </h2>
+            <ul>
+                <li> Name: Lakshmi Venkata Durga Chaitanya</li>
+                <li>Email: <a href="Emailto:tlvdchaitanya@gmail.com">tlvdchaitanya@gmail.com</a></li>
+                <li>Phone number: <a href="phone:9302619229">9302619229</a></li>
+                <li><a href="https://www.linkedin.com/in/chaitanyathadiboina/" target="_blank">linkedin Profile</a></li>
+            </ul> -->
+            <section class="contact-section">
+                <div class="contact-card">
+                  <h2>Let’s Work Together!</h2>
+                  <p>I’m open to exciting projects, collaborations, or full-time opportunities.<br>Drop a message and I’ll get back to you soon!</p>
+              
+                  <form id="contactform" class="contact-form" action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="4" placeholder="Your Message..." required></textarea>
+                    <button type="submit">Send Message 🚀</button>
+                  </form>
+                </div>
+              </section>
+              
+    </div>
+    <!-- <dl>
+        <dt>Use the Page navigations to View my pages</dt>
+        <br>
+        <dd><a href="index.html">Home Page</a></dd>
+        <br>
+        <dd> <a href="About.html"> About</a></dd>
+        <br>
+        <dd> <a href="projects.html">Education</a></dd>
+        <br>
+        <dd> <a href="projects.html">Experience</a></dd>
+        <br>
+        <dd> <a href="projects.html">Projects</a></dd>
+        <br>
+        <dd> <a href="projects.html">Skills</a></dd>
+        <br>
+        <dd> <a href="projects.html">Contact</a></dd>
+    </dl> -->
+<!-- 
+    <button style="background-color: red;"><a href="emailto:tlvdchaitanya@gmail.com"></a>Hire me </button>
+    <button style="background-color: rgb(13, 149, 202);">Contact me </button>
+    <button style="background-color: green;">resume</button> -->
+
+</article>
+    <footer id="time" class="container">
+        <!-- <p> Updated: 01-15-2024 </p> -->
+    </footer>
+
+  <!-- Contact Section
+  <section id="contact" class="contact-section">
+    <div class="contact-card">
+      <h2>Let’s Work Together!</h2>
+      <p>I’m open to exciting projects, collaborations, or full-time opportunities.<br>Drop a message and I’ll get back to you soon!</p>
+      <form id="contactform" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="4" placeholder="Your Message..." required></textarea>
+        <button type="submit">Send Message 🚀</button>
+      </form>
+    </div>
+  </section>
+
+  <footer><p>Updated: 01-15-2024</p></footer> -->
+
+  <script src="script_ultimate.js"></script>
+</body>
+</html>
