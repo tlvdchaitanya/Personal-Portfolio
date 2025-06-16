@@ -7,6 +7,7 @@
   <title>Chaitanya Thadiboina</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style_ultimate.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -17,7 +18,7 @@
 
   <!-- Navigation Bar -->
   <header>
-    <nav class="modern-navbar">
+    <!-- <nav class="modern-navbar">
       <div class="nav-brand">
         <a href="#" class="brand-logo">Chaitanya<span></span></a>
       </div>
@@ -31,17 +32,37 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
+    </nav> -->
+<!-- ✅ PREMIUM MINIMAL NAVIGATION BAR -->
+<nav class="nav-ultimate" id="nav-ultimate">
+  <div class="nav-ultimate-inner">
+    <div class="nav-ultimate-logo">Chaitanya</div>
+    <ul class="nav-ultimate-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+    
+    
   </header>
   <br>
   <!-- Hero Section -->
   <section class="hero" id="hero">
+    <br>
+    <br>
+    <h1 class="hero-name-black">Hello, I'm Chaitanya Thadiboina</h1>
     <h1><span id="typed-name"></span></h1>
+    <p class="cool-centered-text">With practical experience in software engineering, I enjoy building web applications that are both functional and intuitive. I find purpose in designing clean user interfaces, writing scalable backend logic, and creating seamless digital experiences. Fueled by curiosity and a love for learning, I stay current with emerging technologies and take pride in blending thoughtful design with robust engineering.</p>
     <p class="cool-text">I’m open to exciting projects, collaborations, or full-time opportunities.</p>
     <div class="button-group">
-      <a href="mailto:tlvdchaitanya@gmail.com" class="hero-btn">🚀 hire me</a>
-      <a href="resume.pdf" class="hero-btn" download>📄 Resume</a>
-      <a href="#contact" class="hero-btn">📬 Contact</a>
+      <a href="mailto:tlvdchaitanya@gmail.com" class="hero1">🚀 hire me</a>
+      <a href="resume.pdf" class="hero2" download>📄 Resume</a>
+      <a href="#contact" class="hero3">📬 Contact</a>
     </div>
   </section>
   <br>
@@ -77,15 +98,15 @@
       <h2 id="popup-title"></h2>
       <p id="popup-desc"></p>
       <div class="popup-actions">
-        <a id="popup-code-link" href="#" target="_blank" class="popup-button">View Code</a>
+        <a id="popup-code-link" href="https://github.com/tlvdchaitanya" target="_blank" class="popup-button">View Code</a>
         <button onclick="closePopup()" class="popup-button">Close</button>
       </div>
     </div>
   </div>  
   <br>
   <div>
-    <p id="About" class="container">   
-     <h2 style="text-align:center; font-size: 2rem; margin: 2rem 0;" >About</h2>
+    <!-- <p id="About" class="container">    -->
+     <!-- <h2 style="text-align:center; font-size: 2rem; margin: 2rem 0;" >About</h2>
         I’m a passionate Software Engineer with expertise in Java, C, and Web Development, dedicated to building high-performance, efficient, and scalable software solutions. As a Software Engineer Intern at SiliconAcademyPvtLtd, I developed and optimized software, managed large datasets, and collaborated with teams to solve complex challenges.  
         
         Currently, I pursued my Bachelor’s in Computer Science at Indiana State University, mastering software development and data analysis. I also hold certifications, including:  
@@ -94,8 +115,26 @@
         
         My web development skills include HTML, CSS, JavaScript, React, and Node.js, enabling me to build dynamic, responsive, and user-friendly web applications.  
         
-        I am actively seeking a challenging internship or full-time opportunity where I can apply my skills, grow as a developer, and contribute to impactful projects. If you’re looking for a dedicated, innovative, and results-driven engineer, let’s connect! 🚀 </p>
-    </main>
+        I am actively seeking a challenging internship or full-time opportunity where I can apply my skills, grow as a developer, and contribute to impactful projects. If you’re looking for a dedicated, innovative, and results-driven engineer, let’s connect! 🚀 -->
+      <!-- </p>  -->
+      <section id="About" class="about-centered">
+        <h2>About</h2>
+        <div class="about-text">
+          <p>
+            I’m a passionate Software Engineer with expertise in Java, C, and Web Development, dedicated to building high-performance, efficient, and scalable software solutions. As a Software Engineer Intern at SiliconAcademyPvtLtd, I developed and optimized software, managed large datasets, and collaborated with teams to solve complex challenges.  
+        
+        Currently, I pursued my Bachelor’s in Computer Science at Indiana State University, mastering software development and data analysis. I also hold certifications, including:  
+        ✅ HTML, CSS, and JavaScript for Web Developers – Johns Hopkins University  
+        ✅ Microsoft Certified: Azure Administrator Associate – Microsoft  
+        
+        My web development skills include HTML, CSS, JavaScript, React, and Node.js, enabling me to build dynamic, responsive, and user-friendly web applications.  
+        
+        I am actively seeking a challenging internship or full-time opportunity where I can apply my skills, grow as a developer, and contribute to impactful projects. If you’re looking for a dedicated, innovative, and results-driven engineer, let’s connect! 🚀
+          </p>
+        </div>
+      </section>
+      
+      </main>
     <article>
         <!-- <div id="education" class="container">
             <h2>Education</h2>
@@ -174,26 +213,8 @@
       </div>
     </section>
     <br>
-    <div id="experience">
+    <!-- <div id="experience">
         <h2 style="text-align:center; font-size: 2rem; margin: 2rem 0;" >Experience</h2>
-        <br>
-        <!-- <p><b>Software development Engineer intern</b></p>
-        <p><i>IB systems Inc</i></p>
-        <p>
-            <ul>
-                <li>Contributed as a Java and web developer, building scalable applications and enhancing systems.
-                </li>
-                <li>Integrated AI-driven features using large language models (LLMs) to improve user experience and system intelligence.
-                </li>
-                <li>Gained hands-on experience with agile workflows, RESTful APIs, and modern development tools.
-                </li>
-                <li>Designed and built RESTful APIs for internal service integration, improving response times and data handling efficiency by 15%.
-                </li>
-                <li>
-                    Partnered with cross-functional teams to successfully integrate the Message Level Simulator into existing systems, resulting in a 50% boost in data accuracy and a 20% enhancement in overall system performance.
-                </li>
-            </ul>
-        </p> -->
         <br>
         <p><b>Software Engineer Intern</b></p>
         <p><i>SiliconAcademyPvtLtd 
@@ -212,7 +233,27 @@
                 </li>
             </ul>
         </p>
-    </div>
+    </div> -->
+    <section id="experience" class="content-section">
+      <h2>Experience</h2>
+      <div class="content-box">
+        <p><b>Software Engineer Intern</b></p>
+        <p><i>SiliconAcademyPvtLtd</i></p>
+        <ul>
+          <li>Developed and optimized efficient, scalable code in C and Java, enhancing software performance and maintainability.
+          </li>
+          <li>Gained hands-on experience in data management and processing, improving system functionality and efficiency.
+          </li>
+          <li>Worked on challenging projects that strengthened problem-solving skills and deepened software development expertise.
+          </li>
+          <li>Optimized performance by handling intricate datasets and implementing effective data processing solutions.
+          </li>
+          <li>Contributed to software solutions that enhanced overall functionality and efficiency.
+          </li>
+        </ul>
+      </div>
+    </section>
+    
     <div>
         <!-- <h2>Projects</h2>
            <div class="portfolio-container">
