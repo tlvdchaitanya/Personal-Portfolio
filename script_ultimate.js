@@ -1,11 +1,20 @@
 
 // Typed.js
-const typed = new Typed("#typed-name", {
-  strings: ["Hi, I'm Chaitanya Thadiboina 👋", "Software Engineer", "Web Developer", "Full Stack Enthusiast"],
+// const typed = new Typed("#typed-name", {
+//   strings: ["👨‍💻Software Engineer", "🌐Web Developer", "💻Full Stack Developer"],
+//   typeSpeed: 60,
+//   backSpeed: 30,
+//   loop: true
+// });
+
+new Typed("#typed-name", {
+  strings: ["👨‍💻Software Engineer", "🌐Web Developer", "💻Full Stack Developer"],
   typeSpeed: 60,
   backSpeed: 30,
-  loop: true
+  loop: true,
+  cursorChar: "|" // Change to "▌" or "_" if you like
 });
+
 
 // Dark Mode Toggle
 document.getElementById("darkToggle").addEventListener("click", () => {
@@ -60,4 +69,15 @@ function closePopup() {
     document.getElementById('darkSidebar').classList.toggle('active');
   }
 
+// Nav bar effects
+
+  // Shrink effect on scroll
+  window.addEventListener("scroll", () => {
+    const nav = document.getElementById("nav-ultimate");
+    if (window.scrollY > 10) {
+      nav.classList.add("shrink");
+    } else {
+      nav.classList.remove("shrink");
+    }
+  });
 
