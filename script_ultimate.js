@@ -81,3 +81,19 @@ function closePopup() {
     }
   });
 
+// Apple nav bar 
+
+// Shrink navbar on scroll
+window.addEventListener("scroll", () => {
+  const nav = document.getElementById("appleNavbar");
+  if (window.scrollY > 10) {
+    nav.classList.add("shrink");
+  } else {
+    nav.classList.remove("shrink");
+  }
+});
+
+// Hamburger toggle
+document.getElementById("hamburger").addEventListener("click", () => {
+  document.getElementById("navbarLinks").classList.toggle("show");
+});
