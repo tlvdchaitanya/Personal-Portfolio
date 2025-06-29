@@ -1115,3 +1115,107 @@ Keep your navbar, but just make hover modern
     max-width: 90%;
   }
 }
+/* apple style nav bar */
+
+/* Apple Navbar Styles */
+.apple-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+  transition: height 0.3s ease, background 0.3s ease;
+}
+
+.apple-navbar.shrink {
+  height: 38px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.apple-navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.apple-logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+.apple-navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 1.8rem;
+}
+
+.apple-navbar-links li a {
+  text-decoration: none;
+  color: #1d1d1f;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont;
+  transition: color 0.3s ease;
+}
+
+.apple-navbar-links li a:hover {
+  color: #0071e3;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .apple-navbar-links {
+    display: none;
+    position: absolute;
+    top: 48px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .apple-navbar-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .apple-navbar {
+    background: rgba(18, 18, 18, 0.8);
+  }
+
+  .apple-navbar-links li a {
+    color: #eee;
+  }
+
+  .apple-navbar-links li a:hover {
+    color: #0af;
+  }
+
+  .apple-logo {
+    color: #eee;
+  }
+}
